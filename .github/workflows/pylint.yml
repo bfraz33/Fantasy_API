@@ -35,4 +35,4 @@ jobs:
       # Run pylint on your app folder
       - name: Lint Python code
         run: |
-          pylint app/
+          pylint app
