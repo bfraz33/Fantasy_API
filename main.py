@@ -6,7 +6,8 @@ players = [
     {"id": 1, "name": "Shohei Ohtani", "team": "Dodgers"},
     {"id": 2, "name": "Aaron Judge", "team": "Yankees"},
     {"id": 3, "name": "Mookie Betts", "team": "Dodgers"},
-    {"id": 4, "name": "Christian Yelich", "team": "Brewers"}
+    {"id": 4, "name": "Christian Yelich", "team": "Brewers"},
+    {"id": 5, "name": "Paul Skenes", "team": "Pirates"}
 ]
 
 @app.get("/players")
