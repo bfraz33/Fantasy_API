@@ -1,0 +1,30 @@
+stages:
+  - build
+  - test
+
+variables:
+  PYTHON_VERSION: "3.11"
+
+before_script:
+  - echo "Setting up Python environment..."
+  - python --version
+  - python -m pip install --upgrade pip
+  - pip install -r requirements.txt
+  - pip install pylint
+
+build_job:
+  stage: build
+  script:
+    - echo "Building project..."
+    # Add other build commands here if needed
+  tags:
+    - shell
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - python -m unittest discover -s tests
+    - pylint *.py
+  tags:
+    - shell
